@@ -156,27 +156,18 @@ a[href^=tel] {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Бургер */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ In*/
 .obinfo {
-  padding: 47px 50px 0px 50px;
-  font-size: 30px;
-
+  padding: 47px 0px 0px 0px;
+  font-size: 23px;
+  text-align: center;
 }
 
-.obinfo>div {
+.obinfo>section>div {
   display: block;
   border: none;
 }
 
-.obinfo h1 {
-  text-align: center;
-}
 
-.obinfo p {
-  text-align: justify;
-}
 
-.obinfo ul {
-  text-align: center;
-}
 
 /* /////////////////////////////////////  Картинки*/
 .galary-1 {
