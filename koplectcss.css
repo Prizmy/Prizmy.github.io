@@ -156,13 +156,6 @@ a[href^=tel] {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Бургер */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ In*/
 .obinfo {
-  /* display: block;
-  position: relative;
-  z-index: -1;
-  font-size: 30px;
-  padding: 47px 50px 0px 50px;
-  width: 800px;
-  height: 800px; */
   padding: 47px 50px 0px 50px;
   font-size: 30px;
 
@@ -310,28 +303,8 @@ a[href^=tel] {
     margin: 15px 0;
     padding: 0 15px;
   }
-
-  .itemIner:active .ItemTitle>span>h1 {
-    font-size: 0.9em;
-    text-align: left;
-  }
-  
-  .itemIner:active .ItemTitle>span>a {
-    font-size: 0.5em;
-    text-align: left;
-  }
-  
-  .itemIner:active .ItemTitle>span {
-    transform: translateY(0);
-    visibility: visible;
-    font-size: auto;
-  
-  }
-  .itemIner::before {
-    opacity: 1;
+  .ItemTitle>span>a {
+    display: none;
   }
 
-  .itemIner:hover .ItemTitle>span {
-    transform: none;
-  }
 }
