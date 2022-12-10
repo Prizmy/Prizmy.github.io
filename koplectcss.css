@@ -157,7 +157,7 @@ a[href^=tel] {
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ In*/
 .obinfo {
   padding: 47px 0px 0px 0px;
-  font-size: 23px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -236,7 +236,7 @@ a[href^=tel] {
 .ItemTitle>span>p {
   text-decoration: none;
   color: hsl(285, 100%, 53%);
-  width: 107px;
+  width: 87px;
   display: block;
   font-family: arial;
   text-decoration: none;
@@ -289,7 +289,7 @@ a[href^=tel] {
   }
 
   .galary-intem {
-    width: 210px;
+    width: 120px;
     height: 100px;
     margin: 15px 0;
     padding: 0 15px;
@@ -298,4 +298,16 @@ a[href^=tel] {
     display: none;
   }
 
+  .obinfo {
+    font-size: 23px;
+  }
+  .itemIner:hover .ItemTitle>span>h1 {
+    font-size: 0.6em;
+
+  }
+  .ItemTitle {
+    left: 7px;  
+    bottom: 7px;
+  }
+  
 }
