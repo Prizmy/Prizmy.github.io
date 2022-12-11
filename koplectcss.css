@@ -1,8 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  page-break-after: auto;
 }
-
 .title {
   font-size: 36px;
   padding-top: 10px;
@@ -13,6 +13,9 @@ body {
   background: #171717;
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 .box {
@@ -146,7 +149,6 @@ a[href^=tel] {
 .menu__item:hover {
   background-color: #CFD8DC;
 }
-
 .menu__box,
 .menu__item,
 .menu__btn {
@@ -165,10 +167,6 @@ a[href^=tel] {
   display: block;
   border: none;
 }
-
-
-
-
 /* /////////////////////////////////////  Картинки*/
 .galary-1 {
   display: flex;
@@ -176,7 +174,7 @@ a[href^=tel] {
   height: fit-content;
   justify-content: center;
   margin: 0 auto;
-  padding: 0px 0px 100px 0px;
+  padding: 0px 0px 75px 0px;
 }
 
 .galary-intem {
@@ -277,6 +275,89 @@ a[href^=tel] {
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ In*/
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ foter*/
+.boxFoter{
+  display: grid;
+  padding: 0px 0 10px 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px auto);
+  justify-items: stretch;
+  align-items: stretch;
+}
+.boxFoter>div{
+  padding: 1em;
+  background: #393939;
+  text-align: center;
+}
+.FoterLine p{
+  padding: 5px;
+}
+.FoterLine p>a{
+  text-decoration: none;
+  color: #A9A9A9;
+}
+.FoterLine address>a{
+  text-decoration: none;
+  color: #A9A9A9;
+}
+.elf>div>p>a:hover{
+  color: #F51616;
+  transition: .5s;
+}
+.social-icons-4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px;
+}
+.social-icons-4 a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #efefef;
+  position: relative;
+  margin: 5px;
+  text-align: center;
+  box-shadow: 0 2px 6px #c1c1c1;
+  font-size: 32px;
+  color: #337AB7;
+  transition: 0.5s;
+}
+.social-icons-4 a img {
+  width: 32px;
+  height: 32px;
+  margin-top: 14px;
+}
+.social-icons-4 a i,
+.social-icons-4 a img {
+  z-index:2;
+  position: relative;
+  line-height: 60px;
+}
+.social-icons-4 a:hover {
+  color: #fff;
+}
+.social-icons-4 a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #BFE2FF;
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+  transition: 0.9s;
+  top: 0;
+  left: 50%;
+}
+.social-icons-4 a:hover:after {
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  background: linear-gradient(140deg, #0800ff, #F51616)
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ foter*/
 @media (max-width: 1300px) {
   .box>div {
     display: none;
@@ -309,5 +390,19 @@ a[href^=tel] {
     left: 7px;  
     bottom: 7px;
   }
-  
+  .Elf1{
+    grid-column: 1/3;
+    text-align: center;
+  }
+  .Elf2{
+    grid-column: 3/5;
+    text-align: center;
+  }
+  .Elf3{
+    grid-column: 1/3;
+  }  
+  .Elf4{
+    grid-column: 3/5;
+    text-align: center;
+  }
 }
