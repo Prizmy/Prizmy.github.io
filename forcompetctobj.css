@@ -41,6 +41,17 @@ a[href^=tel]{
   color: #A9A9A9;
   text-decoration: none;
 }
+
+.obinfo {
+  padding: 47px 0px 0px 0px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.obinfo>section>div {
+  display: block;
+  border: none;
+}
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Бургер */
 #menu__toggle {
     opacity: 0;
@@ -201,6 +212,88 @@ a[href^=tel]{
   margin-left: -30px;
   background: linear-gradient(140deg, #0800ff, #F51616)
 }
+/* //////// для видио */
+.galary-3{
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+.galary-intem3{
+  width: 1080px ;
+  height: 800px;
+  margin: 15px 0;
+  padding: 0 15px;
+}
+.itemIner3{
+  position: relative;
+  display: flex;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.itemIner3:hover:before{
+  opacity: 1;
+}
+.itemImage3{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .4s ease;
+}
+.itemIner3::before{
+  position: absolute;
+  content: '';
+  width: 280px;
+  height: 150px;
+  background: #fff;
+  transform: translateY(25%) translateX(-7.5%);
+  z-index: -1;
+}
+
+
+.ItemTitle3 >span{
+  display: block;
+  transform: translateY(700px);
+  transition: transform .9s ease;
+  visibility: hidden;
+  position: absolute;
+  left: 40px;
+  top:100px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color:#FFF;
+  overflow: hidden; 
+  z-index: 3;
+  width: 1000px;
+  height: 300px;
+  text-align: center;
+  padding: 130px 0 0 0;
+}
+.ItemTitle3>span>h1{
+  padding: 0 0 30px 400px;
+}
+.itemIner3:hover .ItemTitle3>span>h1{
+  font-size: 0.9em;
+  text-align: left;
+}
+.itemIner3:hover .ItemTitle3>span>a{
+  padding: 10px;
+  font-size: 0.5em;
+  text-align: left;
+}
+.itemIner3:hover .ItemTitle3>span{
+  transform: translateY(0);
+  visibility: visible;
+  font-size: auto;
+  background: #393939;
+  overflow: 100%;
+  color: #A9A9A9;
+}
+
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ foter*/
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Бургер */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ соц сети */
@@ -225,5 +318,11 @@ a[href^=tel]{
           .Elf4{
             grid-column: 3/5;
             text-align: center;
+          }
+          .ItemTitle3>span{
+            opacity: 0;
+          }
+          .obinfo {
+            font-size: 23px;
           }
   }

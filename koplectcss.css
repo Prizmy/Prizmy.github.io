@@ -231,7 +231,7 @@ a[href^=tel] {
   z-index: 3;
 }
 
-.ItemTitle>span>p {
+.ItemTitle>span>p>a {
   text-decoration: none;
   color: hsl(285, 100%, 53%);
   width: 87px;
