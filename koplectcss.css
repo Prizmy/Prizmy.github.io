@@ -40,7 +40,7 @@ body {
 
 .box>div>a {
   text-decoration: none;
-  color: #A9A9A9;
+  color:#A9A9A9;
 }
 
 .box>div>a:hover {
@@ -358,6 +358,15 @@ a[href^=tel] {
   background: linear-gradient(140deg, #0800ff, #F51616)
 }
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ foter*/
+@media(max-width:700)
+{
+  .galary-intem {
+    width: 120px;
+    height: 100px;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+}
 @media (max-width: 1300px) {
   .box>div {
     display: none;
@@ -370,8 +379,8 @@ a[href^=tel] {
   }
 
   .galary-intem {
-    width: 120px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     margin: 15px 0;
     padding: 0 15px;
   }
