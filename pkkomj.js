@@ -8,11 +8,5 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
         findExternals();
     }
     
-    function findExternals() {
-        let links = document.getElementsByTagName("a");
-        Array.from(links).forEach((link) => {
-            if (link.host !== window.location.host)
-                link.style.color = "#F51616";
-        });
-    }
+
     
