@@ -204,87 +204,6 @@ a[href^=tel]{
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ foter*/
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Бургер */
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ соц сети */
-
-/* /////////////// galary */
-.gallery {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
-  justify-content: center;
-  padding: 0px 0px 10px 0px;
-}
-
-.main_image {
-  min-width: 600px;
-  width: 800px;
-  height: 400px;
-
-}
-
-.main_image img {
-  width: 800px;
-  height: 400px;
-}
-
-.images_list {
-  z-index: 1;
-  margin-top: 5px;
-  height: 100px;
-  width: 800px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: row;
-}
-
-.images_list img {
-  width: 200px;
-
-  object-fit: none;
-}
-
-.images_list img + img {
-  border-left: solid black;
-}
-
-.prepare_image {
-  z-index: 1;
-  position: absolute;
-  width: 800px;
-  height: 400px;
-  transform-origin: center;
-  animation: upscaleImage 2s linear forwards;
-}
-
-@keyframes upscaleImage {
-  0% {
-      scale: 0;
-  }
-  100% {
-      scale: 1;
-  }
-}
-
-#list {
-  user-select: none;
-  padding-left: 15px;
-}
-
-#list li {
-  width: 50px;
-}
-.textimage{
-  position: relative;
-  display: block;
-  flex-wrap: wrap;
-  text-align: center;
-  
-}
- .tetbloc1,.tetbloc2,.tetbloc3,.tetbloc4,.tetbloc5{
-  display: none;
-} 
-/* ///////////// */
 @media (max-width: 1300px) {
         .box>div{
             display: none;
@@ -308,6 +227,3 @@ a[href^=tel]{
             text-align: center;
           }
   }
-  
-  
-

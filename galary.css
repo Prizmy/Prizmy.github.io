@@ -206,6 +206,10 @@ a[href^=tel]{
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ соц сети */
 
 /* /////////////// galary */
+.h1galary{
+  font-size: 30px;
+  color:#A9A9A9
+}
 .gallery {
   position: relative;
   display: flex;
@@ -217,21 +221,21 @@ a[href^=tel]{
 
 .main_image {
   min-width: 600px;
-  width: 800px;
-  height: 400px;
+  width: 960px;
+  height: 640px;
 
 }
 
 .main_image img {
-  width: 800px;
-  height: 400px;
+  width: 960px;
+  height: 640px;
 }
 
 .images_list {
   z-index: 1;
   margin-top: 5px;
   height: 100px;
-  width: 800px;
+  width: 960px;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
@@ -251,8 +255,8 @@ a[href^=tel]{
 .prepare_image {
   z-index: 1;
   position: absolute;
-  width: 800px;
-  height: 400px;
+  width: 960px;
+  height: 640px;
   transform-origin: center;
   animation: upscaleImage 2s linear forwards;
 }
@@ -274,16 +278,6 @@ a[href^=tel]{
 #list li {
   width: 50px;
 }
-.textimage{
-  position: relative;
-  display: block;
-  flex-wrap: wrap;
-  text-align: center;
-  
-}
- .tetbloc1,.tetbloc2,.tetbloc3,.tetbloc4,.tetbloc5{
-  display: none;
-} 
 /* ///////////// */
 @media (max-width: 1300px) {
         .box>div{
@@ -307,7 +301,56 @@ a[href^=tel]{
             grid-column: 3/5;
             text-align: center;
           }
+
   }
-  
+
+  @media(max-width:980px)
+  {
+    .main_image {
+      min-width: 600px;
+      width: 600px;
+      height: 400px;
+    
+    }
+    
+    .main_image img {
+      width: 600px;
+      height: 400px;
+    
+    }
+    
+    .images_list {
+      width: 600px;
+      height: 100px;
+    }
+    .h1galary{
+      font-size: 20px;
+    }
+  }
+
+  @media(max-width:600px)
+  {
+    .main_image {
+      min-width: 300px;
+      width: 200px;
+      height: 200px;
+    
+    }
+    
+    .main_image img {
+      width: 300px;
+      height: 200px;
+    
+    }
+    
+    .images_list {
+      width: 300px;
+      height: 100px;
+    }
+    .h1galary{
+      text-align: justify;
+      font-size: 14px;
+    }
+  }
   
 

@@ -7,8 +7,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)
 
 
 
-//Change image
+
 function changeMainImage(e) {
+    const pageWidth = document.documentElement.scrollWidth
+    if(pageWidth >1000){
     if (e.target.tagName === "IMG") {
         let mainImg = document.getElementById("main_image").getElementsByTagName("img")[0];
         let showImage = e.target.cloneNode(true);
@@ -22,7 +24,7 @@ function changeMainImage(e) {
         showImage.classList.add("prepare_image");
         showImage.classList.add("show_image");
         document.getElementsByClassName("gallery")[0].appendChild(showImage);
-        let imgX = showImage.getBoundingClientRect().left - 402;
+        let imgX = showImage.getBoundingClientRect().left - 480;
         let moveImage = setInterval(function () {
             if (showImage.style.top !== "20px") {
                 showImage.style.top = parseInt(showImage.style.top) - 2 + "px";
@@ -43,5 +45,23 @@ function changeMainImage(e) {
         }, 2200)
     }
 }
+    else{
+        if (e.target.tagName === "IMG") {
+            let mainImg = document.getElementById("main_image").getElementsByTagName("img")[0];
+            let showImage = e.target.cloneNode(true);
+            let moveImage = setInterval(function () {
+                if (showImage.style.top !== "20px") {
+                    showImage.style.top = parseInt(showImage) ;
+                }
+            }, );
+            setTimeout(function () {
+                showImage.remove();
+                clearInterval(moveImage);
+                mainImg.src = e.target.src;
+            }, 0)
+        }
+    }
+}
+
 
 
